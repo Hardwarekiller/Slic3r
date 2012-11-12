@@ -465,12 +465,12 @@ sub intersect_facet {
             );
             #print "Horizontal edge at $z!\n";
             
-        } elsif ($a->[Z] == $z) {
+        } elsif ($a->[Z] eq $z) {
             #print "A point on plane $z!\n";
             push @points, [ $a->[X], $a->[Y], $a_id ];
             push @points_on_layer, $#points;
             
-        } elsif ($b->[Z] == $z) {
+        } elsif ($b->[Z] eq $z) {
             #print "B point on plane $z!\n";
             push @points, [ $b->[X], $b->[Y], $b_id ];
             push @points_on_layer, $#points;
